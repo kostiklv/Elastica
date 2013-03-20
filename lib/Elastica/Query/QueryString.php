@@ -247,9 +247,9 @@ class Elastica_Query_QueryString extends Elastica_Query_Abstract
      * @param  int                        $tieBreaker
      * @return Elastica_Query_QueryString Current object
      */
-    public function setTieBraker($tieBreaker = 0)
+    public function setTieBreaker($tieBreaker = 0)
     {
-        return $this->setParam('tie_breaker', (int) $tieBreaker);
+        return $this->setParam('tie_breaker', (float) $tieBreaker);
     }
 
     /**
